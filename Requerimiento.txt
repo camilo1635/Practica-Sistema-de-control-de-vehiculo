@@ -1,0 +1,41 @@
+Un sistema de control de automóvil tiene un display LCD, un display 7 segmentos, leds, 1 swicth, y botones.
+
+El vehículo puede cambiar entre un estado de PARADO a en MOVIMIENTO, y viceversa, mediante el
+accionamiento de un switch. Cuando está en estado PARADO, no puede incrementar la velocidad. Cuando está en
+estado en MOVIMIENTO, podrá incrementar y disminuir la velocidad. Cuando esté en estado PARADO se debe
+presentar en el display 7 segmentos el número 0, cuando esté en estado EN MOVIMIENTO se debe presentar en
+el display 7 segmentos el número 1.
+
+El estado inicial será PARADO, por lo cual la velocidad será 0.
+
+El display LCD debe mostrar lo siguiente:
+
+Primera línea del LCD: Un mensaje que diga: “Velocidad:” y a continuación se debe presentar el valor
+actualizado de la velocidad.
+
+Segunda línea del LCD: Un mensaje que diga: “Velocidad límite: 60Km/h”.
+
+Tercera línea del LCD: Debe presentar un mensaje indicando si se incrementa o se disminuye la velocidad.
+“Incrementando” o “Decrementando”.
+
+Para incrementar y disminuir la velocidad se tienen dos botones, uno para incrementar y otro para disminuir.
+Cada vez que se presione el botón de incrementar (cuando está en estado EN MOVIMIENTO), se debe incrementar
+el valor de la velocidad en 5 Km/h, mientras que al presionar el botón de decrementar la velocidad (en estado en
+MOVIMIENTO), se debe decrementar el valor en 3 Km/h.
+
+El valor máximo al que debe llegar la velocidad es 95 Km/h, no se debe poder incrementar por encima de ese
+valor.
+
+Cuando la velocidad supere los 60Km/h, se debe encender un led rojo, y debe permanecer encendido hasta que
+no disminuya por debajo de 60 Km/h.
+
+Cuando se intente cambiar el estado del vehículo a PARADO y este se encuentre EN MOVIMIENTO a una velocidad
+de más de 10 Km/h, no se debe permitir, se debe encender un led azul indicando que el vehículo no se puede
+detener y la velocidad se debe mantener en el valor que estaba. Cuando el vehículo esté en estado PARADO por
+más de 15 segundos debe presentarse un mensaje en la cuarta línea del LCD que diga “CAMBIAR A EN
+MOVIMIENTO”.
+
+REQUERIMIENTOS DEL TRABAJO: Utilice estados para el sistema, identifique cuantos posibles valores puede tener
+la variable estado. Implemente la funcionalidad del requerimiento de forma incremental. Guarde una versión del
+programa a medida que vaya incrementando la funcionalidad. Utilice funciones, comente el código, utilice arreglos
+de datos y contadores para recorrerlos.
